@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Índice de Massa Corporal</h1>
+    </header>
+    <div class="la">
+        <!-- <form action="#"> -->
+        <nav>
+            <ul>
+                <li><label for="altura">Altura (cm):</label></li>
+                <li><input type="number" name="altura" id="altura"></li>
+
+                <li><label for="peso">Peso (kg):</label></li>
+                <li><input type="number" name="peso" id="peso"></li>
+
+                <li><button onclick="calcImc()"> Calcular IMC </button></li>
+
+                <li>
+                    <p>Seu índice de massa corpora l é: <span id="resultado"></span></p>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <img src="https://c.files.bbci.co.uk/29CE/production/_104620701_prmo_imc_br-nc.png" alt="">
+    <!-- </form> -->
+
+    <script>
+        function calcImc() {
+            const altura = parseFloat(document.getElementById("altura").value);
+            const peso = parseFloat(document.getElementById("peso").value);
+
+            const resultado = peso / (altura ** 2);
+
+            document.getElementById("resultado").textContent = resultado.toFixed(2);
+
+        }
+    </script>
+
+    <div class="texto">
+        <p>O que é o IMC e como se calcula?
+            Obtido a partir do peso e da altura do indivíduo, o IMC também aponta níveis de magreza e obesidade, que são
+            usados para nortear o trabalho de profissionais de saúde e de educadores físicos. Para obter o IMC, basta
+            dividir o seu peso (em quilos) pela altura (em metros) elevada ao quadrado (altura x altura)</p>
+    </div>
+
+    <footer>
+        <p>&comp; 2024 - Calculadora IMC Maria Netto</p>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+@font-face {
+    font-family: corpo;
+    src: url(./komigo/Komigo3D-Regular.ttf);
+}
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-right: 300px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header {
+    background-color: #744cd16e;
+    margin: 30px;
+    border-radius: 25px;
+    margin-left: 250px;
+    font-family: corpo;
+
+}
+
+
+img{
+    width: 300px;
+    left: 200px;
+    border-radius: 15px;
+    margin-left: 800px;
+
+}
+
+form {
+    border: #715e94 solid 30px
+}
+
+label {
+    margin-right: 450px;
+}
+
+input {
+    margin: 10px;
+    border-radius: 5px;
+    width: 100px;
+    margin-right: 300px;
+
+}
+
+nav ul li {
+    list-style: none;
+
+}
+
+.la {
+    background-color: #715e94;
+    border-radius: 25px;
+}
+
+.la {
+    padding: 10px;
+    margin-left: 200px;
+
+}
+
+p {
+    margin-left: 300px
+}
+
+
+button {
+    border-radius: 5px;
+    width: 95px;
+    background-color: #110525;
+    color: #ffffff;
+
+
+
+}
+
+.texto {
+    text-align: right;
+
+}
+
+
+footer {
+    background-color: #110525;
+    width: 1000px;
+    display: flex;
+    padding: 0;
+    margin-top: 120px;
+    padding-left: 120px;
+
+}
